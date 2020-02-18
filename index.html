@@ -4,12 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="funcoes.js" type="text/javascript"></script>
     <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/128866/isolated/preview/9d104cd78be9c669adf883bf1eb37c92-alvo-icon-svg-by-vexels.png" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>Espaço do estudante Fake</title>
 </head>
 <body >
-    <h1>Bem-vindo</h1>
-    <span id="debaixo">ao Espaço do Estudante </span>
+    <div class="login">
+        <h1>Bem-Vindo</h1>
+        <span id="debaixo">ao Espaço do Estudante </span>
+        
+        <div class="inputs_login" >
+            <i class="fa fa-user"></i>
+            <input type="text" placeholder="Usuário" id="usuario">
+        </div>
+        <div class="inputs_senha" >
+            <i class="fa fa-lock"></i>
+            <input type="password" placeholder="Senha" id="senha">
+            
+        </div>
+        <button type=submit class="login_btn" id="olho" >
+            mostrar senha
+        </button>
+        <button type=submit class="login_btn" onclick="entrar()" >
+            Entrar
+        </button>
+
+    </div>
+
 
 </body>
 </html>
